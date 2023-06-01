@@ -12,12 +12,14 @@ public class MyClass {
         l.add(23);
         l.add(6);
         l.add(20);
-
-
-
        List<Integer> i =l.stream().sorted().collect(Collectors.toList());
-
-
         System.out.println(i);
+
+        List<Integer> i2 =l.stream().sorted().map(x->x+2).collect(Collectors.toList());
+
+        System.out.println(i2);
+
+
+
     }
 }
